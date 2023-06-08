@@ -1,5 +1,5 @@
 #include <iostream>
-#include "marble.cpp"
+#include "marble.hpp"
 
 using std::cout;
 using std::endl;

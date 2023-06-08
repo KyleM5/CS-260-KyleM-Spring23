@@ -1,5 +1,8 @@
 #include <iostream>
 
+#ifndef marbles_hpp
+#define marbles_hpp
+
 using std::cout;
 using std::endl;
 
@@ -15,3 +18,5 @@ class marbleBag {
         //Command to remove marbles
             //Make sure to add code in case you try to remove while there is no marbles
 };
+
+#endif
