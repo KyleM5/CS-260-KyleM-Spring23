@@ -10,6 +10,8 @@ Other Projects:
  - Assignment 4: Create a linked-list which you can add, remove, and read from a given spot in the list and test each piece of functionality
  - Assignment 5: 
 
+For all of these assignment, you cannot use the vector library. For later assignments that is fine, but not for these ones.
+
 ###############
 
  - Assignment 6: create a binary search tree
