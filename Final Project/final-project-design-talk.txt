@@ -1,0 +1,25 @@
+Goal for the project: Make a graph while meeting the requirement for the other projects
+
+Other Projects:
+ - Assignment 0: Introduction to myself with some stuff about meeting
+ - Assignment 1: Make a bag of marbles
+ - Assignment 2: Create design for a queue and a linked list
+ 
+ Note: Assignment 3-5 all count for the same points. Only 1 is needed
+ - Assignment 3: Design and implement a Queue data structure and analyze the complexity of the implementation
+ - Assignment 4: Create a linked-list which you can add, remove, and read from a given spot in the list and test each piece of functionality
+ - Assignment 5: 
+
+###############
+
+ - Assignment 6: create a binary search tree
+ - Assignment 7: creat a hashtable
+
+ - Final Assignment: Create a graph
+
+###############
+
+Assignment 0: 
+
+
+
