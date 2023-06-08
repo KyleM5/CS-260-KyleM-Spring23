@@ -8,6 +8,6 @@ We would need to know the end of the queue so that we could tack on to it and ch
 
 Based on what we know about linked lists, design a list data structure that allows us to add or remove values at a given location in the list
  - What functions are we liekly going to need for this
-You would need a function that lets you arbitrarily to the list, a function that lets you arbitrarily remove from the list, and a function that lets you read from the list. As part of the arbitrarily add function, you would need it to make sure for it to update the peeks and bottoms if you are interacting with them or you might run into an issue of a pointer that points to the list, but isn't considered part of the list.
+You would need a function that lets you add arbitrarily to the list, a function that lets you arbitrarily remove from the list, and a function that lets you read from the list. As part of the arbitrarily add function, you would need it to make sure for it to update the starting pointer when appending to the beginning..
  - What values will we need to know about the structure for our list to function 
- For any given segment, you would need to know the memory location of what you are interacting with, as well as the memory location of the next thing in the list. You would also need to know the beginning of the list so you could properly go through the list.
+ You would need the memory location of the first entry of the list. You can do everything else from there as linked-list components are linked to the next component, with the final component is directed to nullptr.
