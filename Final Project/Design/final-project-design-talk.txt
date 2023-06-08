@@ -19,7 +19,13 @@ Other Projects:
 
 ###############
 
-Assignment 0: 
+Assignment 0: basic system access
+ - Attempt to install Microsoft VSCode [x]
+ - Attempt to set up a git repository [x]
+ - Introduce yourself on Discord []
+ - Create a readme file with five topics related to computing that interests me and five topics I feel are difficult right now. []
 
-
+ I won't be introducing myself on Discord as I would feel really uncomfortable to do that right now
+ Five topics related to computing that interests me:
+ 
 
