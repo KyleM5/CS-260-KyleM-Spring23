@@ -3,7 +3,7 @@ Assignment 0: basic system access
  - Attempt to install Microsoft VSCode [x] Success!
  - Attempt to set up a git repository [x] Success!
  - Introduce yourself on Discord []
- - Create a readme file with five topics related to computing that interests me and five topics I feel are difficult right now. []
+ - Create a readme file with five topics related to computing that interests me and five topics I feel are difficult right now. [x]
 
  I won't be introducing myself on Discord as I would feel really uncomfortable to do that right now
 
@@ -30,3 +30,7 @@ Five topics that I find difficult right now:
  Operating systems. I hope that I don't have to touch that
 
  Linux. I tried it for a few weeks and I don't know much about it. I will probably change this laptop from Windows to Linux in the future (once the class is over) because while on Linux this device had zero issues with the touch screen, but I now it shuts off if the screen has been on for a few minutes.
+
+##########
+
+There is no code for this assignment, so this is all yoyu get.

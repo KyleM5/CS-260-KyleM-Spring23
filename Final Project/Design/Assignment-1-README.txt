@@ -1,0 +1,15 @@
+Assignment 1: Bag of marbles
+ - explain what a program could do to model a bag of marbles []
+ - Attempt to implement this bag of marbles as simply as possible []
+ - Test the implementation in a driver file. Try and test each function []
+ - Mark what lines of code meet these requirements []
+
+ Explain what a program could do to model a bag of marbles:
+
+ To model a bag of marbles, the bag would need:
+ - A marble bag class
+ - A list to track how many marbles are in the bag (and maybe the color)
+ - A method that lets you add marbles to the bag
+ - A method that lets you see how many marbles are in the bag
+ - A method that lets you take marbles out of the bag
+ - (Optional) A space limit for the bag
