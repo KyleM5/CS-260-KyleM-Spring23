@@ -21,3 +21,5 @@ Assignment 1: Bag of marbles
  Another way to test is by removing marbles. See how many marbles we had before removing, remove # amount of marbles, and see if there is the proper amount of marbles remaining. 
 
  Also configure what happens what happens when you try and remove too many marbles. We aren't making anti-marbles... Though that could be kinda funny.
+
+ The code for the marbleblad is in marble.hpp

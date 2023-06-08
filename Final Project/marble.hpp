@@ -7,28 +7,25 @@ using std::cout;
 using std::endl;
 
 class marbleBag {
-    public:
+    private:
         int marbles;
-
-        //Command to add marbles
-            //Limit how many marbles you can add to prevent overflow/issues
-        void addMarbles (int add) {
-            /*The if statement checks to see if the number is negative, and doesn't add anti-marbles.
-            The else if statement checks if the amount of marbles being added is reasonable, and then adds the number
-            The else statement tells you if you had too many positive marbles.*/
-            if (add > 0) {
-                cout << "You can't add anti-marbles. You would need an anti-marble bag" << endl;
-            }   else if (add < 1000) {
-                marbles += add;
-            }   else {
-                cout << "Too many marbles. Make sure ot not add more than 1000 marbles at a time" << endl;
+    
+    public:    
+        void changeMarbles (int cMarbleNum) { //Command to add marbles
+            if (cMarbleNum + marbles < 0) { //Checks for too negative a number. Can't be adding anti-marbles
+                cout << "You tried removing too many marbles. Bag's marbles being set to zero." << endl;
+                marbles = 0;
+            }   else if (cMarbleNum > 1000) { //Checks for too many marbles. The mouth of the bag is only so big
+                cout << "Too many marbles. Make sure not not add more than 1000 marbles at a time" << endl;
+            }   else { //It has done the checks it needs to do, it just modifies now.
+                marbles += cMarbleNum;
             };
         };
 
-        //Command to see marbles in bag
-
-        //Command to remove marbles
-            //Make sure to add code in case you try to remove while there is no marbles
+        //Command to see marbles in bag. Not really needed when the marbles are a publicly accessible
+        void showMarbles () {
+            cout << "There are " << marbles << " marbles in the bag." << endl;
+        };
 };
 
 #endif
