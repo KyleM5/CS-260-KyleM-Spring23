@@ -1,8 +1,8 @@
 Assignment 1: Bag of marbles
  - explain what a program could do to model a bag of marbles [x]
- - Attempt to implement this bag of marbles as simply as possible []
- - Test the implementation in a driver file. Try and test each function []
- - Mark what lines of code meet these requirements []
+ - Attempt to implement this bag of marbles as simply as possible [x]
+ - Test the implementation in a driver file. Try and test each function [x]
+ - Mark what lines of code meet these requirements [x]
 
  Explain what a program could do to model a bag of marbles:
 
@@ -22,4 +22,5 @@ Assignment 1: Bag of marbles
 
  Also configure what happens what happens when you try and remove too many marbles. We aren't making anti-marbles... Though that could be kinda funny.
 
- The code for the marbleblad is in marble.hpp
+ The code for the marblebag is in marble.hpp
+ The code for testing is in final.cpp and is lines 15-41
