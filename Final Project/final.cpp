@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "marble.hpp"
+#include "arbitrary-list.hpp"
 
 using std::cout;
 using std::cin;
@@ -10,7 +11,7 @@ using std::string;
 string testInput;
 
 int main() {
-    cout << "Do you want to start marble test? Y to start. Any other input to cancel. ";
+    cout << "Do you want to start marble test? Y to start. Any other input to cancel. " << endl;
     cin >> testInput;
     if (testInput == "Y") {
         marbleBag myMarbleBag;
@@ -40,7 +41,10 @@ int main() {
     } else {
         cout << "Marble test will not run." << endl;
     
-    }
+    };
+
+    cout << "Do you want to start arbitrary-list test? Y to start. Any other input to cancel." << endl;
+    cin >> testInput;
     
 
 
