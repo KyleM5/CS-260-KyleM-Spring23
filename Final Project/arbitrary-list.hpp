@@ -20,7 +20,7 @@ class list {
     public:
         list() {
         
-            head = NULL; //Makes this start as an empty list
+            head = nullptr; //Makes this start as an empty list
         };
         
         void insert(int value, int position) {
@@ -42,6 +42,13 @@ class list {
         };
 
         void showData(int position) {
+            node *current = head; //Start at head
+
+            for (int i = 0 < position && current != nullptr; i++) { //Counts to where data is
+                current = current->next;
+            };
+            
+            cout << current->data << endl; //Prints out the data
             //Counter for finding data in the list
 
             //return the data in that spot
