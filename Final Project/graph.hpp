@@ -1,5 +1,6 @@
 #include "graph_node.hpp"
 #include <algorithm>
+#include <iostream>
 #include <limits>
 #include <set>
 #include <string>
@@ -15,6 +16,8 @@ using std::find;
 using std::set;
 using std::min_element;
 using std::numeric_limits;
+using std::cout;
+using std::endl;
 
 
 class Graph {
