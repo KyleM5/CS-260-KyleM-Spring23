@@ -7,22 +7,22 @@
 using std::string;
 using std::vector;
 
-class GraphNode;
+class graphNode;
 
 //Structure to represent an edge
 struct edge {
-    GraphNode *source;
-    GraphNode *destination;
+    graphNode *source;
+    graphNode *destination;
     int weight;
 };
 
-class GraphNode {
+class graphNode {
     public:
     //Constructor
-    GraphNode(string newName) : value(newName) {}; // "?"
+    graphNode(string newName) : value(newName) {};
 
     //Destructor
-    ~GraphNode() {
+    ~graphNode() {
         for (auto neighbor : neighbors) {
             delete neighbor;
         };
@@ -30,14 +30,14 @@ class GraphNode {
     };
     
     //add edge
-    void addEdge(GraphNode *destination, int weight) {
-        edge *newEdge = new edge{this, destination, weight}
+    void addEdge(graphNode *destination, int weight) {
+        edge *newEdge = new edge{this, destination, weight};
         neighbors.push_back(newEdge);
     };
 
     //Get the data of a node
     string getValue() {
-        return value
+        return value;
     };
 
     //has nearby nodes

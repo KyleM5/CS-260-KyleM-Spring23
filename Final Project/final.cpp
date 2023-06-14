@@ -75,9 +75,37 @@ int main() {
 
     cout << "Hello" << endl;
     
-    return 0;
+    //Show functional graph
+    Graph myGraph;
+
+    //Create edge to test simple edge situations
+
+    //Creating nodes
+    myGraph.addNode("Node1");
+    cout << "Node1 has been created." << endl;
+    myGraph.addNode("Node2");
+    cout << "Node2 has been created." << endl;
+
+
+    //Adding edges to nodes
+    myGraph.addEdge("Node1", "Node2", 10);
+    myGraph.addEdge("Node1", "Node2", 5);
+    cout << "Added two edges between node1 and node2 (weights of 10 and 5)" << endl;
+    
+    //delete node
+
+    //greate graph
+
+    //add node
+
+    //add edge
+
     // Show stortest path
 
     // Show minimum spanning tree
+
+    cout << "Done." << endl;
+
+    return 0;
 
 }
