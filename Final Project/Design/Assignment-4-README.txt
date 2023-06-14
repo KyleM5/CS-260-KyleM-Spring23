@@ -11,3 +11,8 @@ Create a linked-list that allows:
 Be  sure to include at least 1 test function for each piece of functionality that should verify that the code is working.
 
 To test the add function as well as the get function. Test getting data from a position twice. Both times should be the same. Afterwards add a value to that position and used the get function again. The new value should be the added value. We can then use the remove function and see the get return the original value.
+
+The insert function is under arbitrary-list.hpp code lines 26-56
+The remove function is under arbitrary-list.hpp code lines 58-84
+The showData function is under arbitrary-list.hpp code lines 86-103
+The tests for these functions is under final.cpp code lines 45-71

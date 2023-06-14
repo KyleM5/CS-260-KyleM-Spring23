@@ -12,13 +12,13 @@ struct node {
 };
 
 //Define the list class for arbitrary list
-class list {
+class arbitraryList {
     private:
         
         node *head; //Head is the start of the list
 
     public:
-        list() {
+        arbitraryList() {
         
             head = nullptr; //Makes this start as an empty list
         };
@@ -34,8 +34,7 @@ class list {
             new_node->data = value; //Inserts the data
             
             
-
-            if (position == 0) { //If pos = 0, inserts at start of the list
+            if (position == 0) { //If pos == 0, inserts at start of the list
                 new_node->next = head;
                 head = new_node;
                 return;
@@ -47,7 +46,7 @@ class list {
             };
 
             if (current == nullptr) { //Checks to see if you went off of the list.
-                cout << "invalid position" << endl;
+                cout << "invalid position, current is nullptr" << endl;
                 delete new_node;
                 return;
             };
@@ -63,29 +62,33 @@ class list {
             };
 
             node *previous = head; //Tracks for previous
-            node *current = nullptr;
+            node *current = head;
 
-            for (int i = 0; i < position-1 && current != nullptr; i++) { //Counts to position-1
-                previous = previous->next;
+            if (current == nullptr) {
+                cout << "list is empty." << endl;
+                return;
             };
-            current = current->next;
 
-            if (current == nullptr || previous == nullptr) {
-                cout << "Invalid position" << endl;
+            for (int i = 0; i < position && current != nullptr; i++) { //Counts to position
+                previous = current;
+                current = current->next;
+            };
+
+            if (current == nullptr) {
+                cout << "Invalid position, trying to remove nullptr" << endl;
                 return;
             };
             previous->next = current->next; //Sets previous to go to where current is pointing
             cout << current->data << endl; //Prints current data
             delete current; //Deletes current
-
-            //Counter for finding the spot before deletion, store for later
-
-            //Find the next for thing we are deleting, store for later
-
-            //Make previous spot in list point further ahead and delete previous entry
         };
 
         void showData(int position) {
+            if (position < 0) { //Checks to see if position argument is valid
+                cout << "Invalid position: Negative positions on the list are not allowed" << endl;
+                return;
+            };
+
             node *current = head; //Start at head
 
             for (int i = 0; i < position && current != nullptr; i++) { //Counts to where data is
@@ -93,7 +96,7 @@ class list {
             };
             
             if (current == nullptr) { //If position is invalid, error.
-                cout << "Invalid position" << endl;
+                cout << "is nullptr" << endl;
                 return;
             };
 

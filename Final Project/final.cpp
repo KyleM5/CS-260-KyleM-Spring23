@@ -40,11 +40,38 @@ int main() {
         cout << "Test concluded";
     } else {
         cout << "Marble test will not run." << endl;
-    
     };
 
     cout << "Do you want to start arbitrary-list test? Y to start. Any other input to cancel." << endl;
     cin >> testInput;
+    if (testInput == "Y") {
+        arbitraryList arblist;
+        arblist.showData(0);
+        arblist.showData(0);
+        arblist.insert(7, 0);
+        arblist.insert(6, 0);
+        arblist.insert(5, 0);
+        arblist.insert(4, 0);
+        arblist.insert(3, 0);
+        arblist.insert(2, 0);
+        arblist.insert(1, 0);
+        cout << "Added data to first seven positions" << endl;
+        cout << "data in position 3: ";
+        arblist.showData(3);
+        arblist.remove(3);
+        cout << "Data should have been removed and replaced with next position, being 5." << endl;
+        arblist.showData(3);
+        cout << "Test for going out of bounds" << endl;
+        arblist.insert(10,10);
+        arblist.remove(10);
+        arblist.showData(10);
+
+        cout << "Test concluded" << endl;
+    } else {
+        cout << "Arbitrary list will not be run" << endl;
+    };
+
+
     
 
 

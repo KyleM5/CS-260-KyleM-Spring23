@@ -8,7 +8,7 @@ Other Projects:
  Note: Assignment 3-5 all count for the same points. Only 1 is needed
  - Assignment 3: Design and implement a Queue data structure and analyze the complexity of the implementation
  - Assignment 4: Create a linked-list which you can add, remove, and read from a given spot in the list and test each piece of functionality
- - Assignment 5: 
+ - Assignment 5: Make an auto-sorting list
 
 For all of these assignment, you cannot use the vector library. For later assignments that is fine, but not for these ones.
 
