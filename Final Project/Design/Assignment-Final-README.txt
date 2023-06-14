@@ -17,7 +17,7 @@ A graph can be used to show how things connect together. An example of a graph c
 
 In order to have a fully functional graph, you would need a class to store the points (vertices) of the graph, the edges of the graph, and the potential data linked to the vertices. This could be used on a map of a town where the vertices are buildings and edges are rows. You could use it to find how a building is connected to another, and using algorithms find how to get to that location the fastest.
 
-For functions to make this work, you would need an add vertex function to add in newly build buildings, an add edge function to represent newly built roads, and an algorithm to find the least amount of road swaps to get to your destination. This is not always the fastest though, because although there may be less roads to get to a destination, those roads might have a lower speed limit compared to other roads, so you would need a minimum spanning tree algorithm to get the actual fastest road.
+For functions to make this work, you would need an add vertex function to add in newly build buildings, an add edge function to represent newly built roads, and an algorithm to find the least amount of road swaps to get to your destination (the shortest path). This is not always the fastest though, because although there may be less roads to get to a destination, those roads might have a lower speed limit compared to other roads, so you would need a minimum spanning tree algorithm to get the actual fastest road.
 
 For future developments, it would be useful to have functions to remove a vertex or edge to represent a road being shut down or a building being demolished. For this instance we will assume a newer town in which there are no bankruptcies or road damage.
 
