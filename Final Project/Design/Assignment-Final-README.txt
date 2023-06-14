@@ -28,3 +28,15 @@ To test the add edge command, you would add an edge to an existing vertex and se
 For shortest path, you could run the code and empirically test to see if it would be the shortest (or one of the shrtest) path(s). Another way is by adding another edge that shrinks the path and see if it takes the now shorter path.
 
 For the minimum spanning tree, you could try to run the code and see if it would be what you extected. Afterward, you could add a edge that is weighted very poorly and see if it would take it even if it shouldn't (for example, it goes to the path with the most/least weight and the new edge is very heavy or light, making the shortest path to want it but not the minimum spanning tree).
+
+Note: I learned that a minumum span tree is different from what I thought. It creates a tree with the minimum weight possible rather than making the least-weighted path between two spots.
+
+Code for adding vertex is found in graph.hpp lines 38-41
+Code for adding edge is found in graph.hpp lines 44-61
+Code for shortest path is found in graph.hpp lines 64-113
+Code for minimum span tree is found in graph.hpp lines 116-166
+
+All tests can be found under final.cpp
+
+Current issues with the code:
+minimum span tree is non-functional. It seems that the for loop is only checking the nodes directly connected to the source node and giving the lowest weight it finds from all connected edges. Running out of time and will fix later.

@@ -85,24 +85,50 @@ int main() {
     cout << "Node1 has been created." << endl;
     myGraph.addNode("Node2");
     cout << "Node2 has been created." << endl;
-
+    myGraph.addNode("Node3");
+    cout << "Node3 has been created." << endl;
+    myGraph.addNode("Node4");
+    cout << "Node4 has been created." << endl;
+    myGraph.addNode("Node5");
+    cout << "Node5 has been created." << endl;
+    myGraph.addNode("Node6");
+    cout << "Node6 has been created." << endl;
 
     //Adding edges to nodes
     myGraph.addEdge("Node1", "Node2", 10);
     myGraph.addEdge("Node1", "Node2", 5);
     cout << "Added two edges between node1 and node2 (weights of 10 and 5)" << endl;
-    
-    //delete node
-
-    //greate graph
-
-    //add node
-
-    //add edge
+    myGraph.addEdge("Node1", "Node6", 1);
+    cout << "Added edge between node1 and node6 (weight 1)" << endl;
+    myGraph.addEdge("Node2", "Node5", 2);
+    cout << "Added edge between node2 and node5 (weight 2)" << endl;
+    myGraph.addEdge("Node5", "Node6", 2);
+    cout << "Added edge between node5 and node6 (weight 2)" << endl;
+    myGraph.addEdge("Node3", "Node4", 1);
+    cout << "Added edge between node3 and node4 (weight 1)" << endl;
+    myGraph.addEdge("Node1", "Node3", 4);
+    cout << "Added edge between node1 and node3 (weight 4)" << endl;
+    myGraph.addEdge("Node3", "Node5", 4);
+    cout << "Added edge between node3 and node5 (weight 4)" << endl;
+    myGraph.addEdge("Node3", "Node5", 2);
+    cout << "Added edge between node3 and node5 (weight 2)" << endl;
+    myGraph.addEdge("Node2", "Node4", 1);
+    cout << "Added edge between node2 and node4 (weight 1)" << endl;
 
     // Show stortest path
+    cout << "Testing shortest path between 1 and 5: " << myGraph.shortestPath("Node1", "Node5") << endl;
+    cout << "Testing shortest path between 5 and 1: " << myGraph.shortestPath("Node5", "Node1") << endl;
+    cout << "Testing shortest path between 3 and 4: " << myGraph.shortestPath("Node3", "Node4") << endl;
+    cout << "That is all for testing shortest paths" << endl;
 
     // Show minimum spanning tree
+    cout << "Testing min span tree from 1: " << myGraph.min_span_tree("Node1") << endl;
+    cout << "Testing min span tree from 4: " << myGraph.min_span_tree("Node4") << endl;
+    myGraph.addNode("Node7");
+    myGraph.addEdge("Node7", "Node1", 300);
+    cout << "Added a node7 with an edge of weight 300 to node1" << endl;
+    cout << "Testing min span tree from 7: " << myGraph.min_span_tree("Node7") << endl;
+
 
     cout << "Done." << endl;
 
